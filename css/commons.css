@@ -1,0 +1,25 @@
+.inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px 0;
+}
+
+.title {
+    text-align: center;
+    margin: 0 0 36px 0;
+}
+
+.title h2{
+    font-size: 24px;
+    color: #d32140;
+    /* bold = 700 */
+    font-weight: 800;
+    margin: 0 0 12px 0;
+}
+
+.title p {
+    font-size: 36px;
+    font-weight: 300;
+    color: #606060;
+}
+
