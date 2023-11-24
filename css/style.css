@@ -1,57 +1,54 @@
+ /* * {
+    outline: 1px solid tomato;
+}   */
+
+
 .Header {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     z-index: 999;
-    line-height: 100px;
 
-    transition: 0.5s;
-    color: #fff;
-    border-bottom: 1px solid transparent;
+    background: rgba(0,0,0,0.2);
 }
 
-.Header:hover {
-    color: #000;
-    background: #000;
-
-}
-
-.Header.on {
-    line-height: 80px;
-    color: #000;
-    background: #000;
-
+.Header h1 {
+    font-size: 0;
 }
 
 .Header .Header_Wrap {
     display: flex;
-    max-width: 1200px;
-    margin: 0 auto;
+    padding: 0 80px;
 }
 
 .Header .Header_Wrap .Gnb {
-    margin: 0 0 0 auto;
-    color: #d32140;
+    margin: 30px 0 0 auto;
+    color: #f9f9f9;
 }
 
+.Header .Header_Wrap .Gnb ul {
+    display: flex;
+    gap: 16px;
+} 
 
-.Header .Header_Wrap .Gnb .Util a{
-    font-size: 16px;
-}
-
-
-.Header_Wrap .Gnb .Util .HSN {
-    color: #fff;
-}
-.Header_Wrap .Gnb .Util .HSN02 {
-color: #9c9a9a;
-}
-
-.Header .Header_Wrap .Gnb .Headerbt {
+.Header .Header_Wrap .Gnb .US {
     border: 1px solid #d32140;
+    color: #d32140;
     padding: 4px;
-    font-weight: 700;
+}
+
+.Header .Header_Wrap .Gnb .kor {
+    font-weight: 900;
+
+}
+
+.Header .Header_Wrap .Gnb i {
+    font-size: 20px;
+}
+
+.Header .Header_Wrap .Gnb .bar {
+    color: #d32140;
 }
 
 .MainVisual {
@@ -96,6 +93,49 @@ color: #9c9a9a;
     }
 }
 
+.Services .Svc {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto 24px auto;
+    text-align: center;
+    line-height: 24px;
+    
+}
+
+
+.Services .Svc .SC i {
+    font-size: 80px;
+    color: #d32140;
+    padding: 0 0 28px 0;
+    border-bottom: 1px solid #E2E2E2;
+    margin: 0 0 12px 0;
+}
+
+.Services .Svc .SC strong {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    
+}
+
+.Services .Svc .SC {
+    flex: 1;
+    overflow: hidden;
+    padding: 0 0 24px 0;
+}
+
+.Services .Svc .SC:hover {
+    transition: 0.2s;
+    color: #fff;
+    background: #d32140;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.Services .Svc .SC:hover i {
+    color: #fff;
+}
+
 .CampAigns .inner .AignsContent {
     display: flex;
     gap: 20px;
@@ -107,7 +147,7 @@ color: #9c9a9a;
     flex: 1 0 250px;
     border: 1px solid #E2E2E2;
     overflow: hidden;
-    height: 350px;
+    height: 300px;
 }
 
 .CampAigns .inner .AignsContent .FG p {
@@ -132,17 +172,27 @@ color: #9c9a9a;
 
 .CampAigns .FG {
     position: relative;
+    cursor: pointer;
 }
 
 .CampAigns .FG .desc{
     padding: 12px;
     border-bottom: 1px solid #ddd;
+    height: 100px;
 }
 
 .CampAigns .FG:hover .desc {
     background: #d32140;
+}
+
+.CampAigns .FG:hover .desc span {
     color: #fff;
 }
+
+.CampAigns .FG:hover .desc p {
+    color: #fff;
+}
+
 
 .CampAigns .FG figure {
     position: absolute;
@@ -154,20 +204,22 @@ color: #9c9a9a;
 }
 
 .CampAigns .FG:hover figure {
-    top:-100px;
+    top:-70px;
 }
 
 .CampAigns .FG .util {
-    line-height: 100px;
-    background: tomato;
+    line-height: 70px;
+    background: #ac1831;
+    font-size: 28px;
+    color: #fff;
 }
 
 .CampAigns .FG:hover .desc{
     transform: translate(0, 0);
 }
 
+
 .CampAigns .more {
-    padding: 48px 0 0 0;
     text-align: center;
     line-height: 40px;
 }
@@ -178,42 +230,6 @@ color: #9c9a9a;
     color: #d32140;
 }
 
-
-.Services .Svc {
-    display: flex;
-    max-width: 1200px;
-    margin: 0 auto 24px auto;
-    text-align: center;
-    line-height: 24px;
-    
-}
-
-.Services .Svc i {
-    font-size: 80px;
-    color: #d32140;
-    margin: 0 0 12px 0;
-}
-
-.Services .Svc strong {
-    text-align: center;
-    font-size: 20px;
-    font-weight: 700;
-    
-}
-
-.Services .SC {
-    flex: 1;
-    overflow: hidden;
-    padding: 0 0 24px 0;
-}
-
-.Services .SC:hover {
-    transition: 0.2s;
-    color: #fff;
-    background: #d32140;
-    overflow: hidden;
-    cursor: pointer;
-}
 
 .Vision {
     background: #000;
@@ -244,3 +260,37 @@ color: #9c9a9a;
     padding: 80px 0;
 } 
 
+.Footer {
+    background: #202020;
+}
+
+.Footer .ftmid .link {
+    display: flex;
+    gap: 30px;
+    color: #b3b2b2;
+    margin: 0 0 24px 0;
+}
+
+.Footer .ftmid .link li {
+    position: relative;
+}
+
+.Footer .ftmid .link li~li::before {
+    content: "";
+    position: absolute;
+    top: 60%;
+    left: -15px;
+    transform: translate(0, -50%);
+    width: 1px;
+    height: 12px;
+    background: #909090;
+}
+
+.Footer .ftmid .link .pass {
+    color: #fff;
+    font-weight: 900;
+}
+
+.Footer .copy {
+    color: #b3b2b2;
+}
