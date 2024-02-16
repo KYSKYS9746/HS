@@ -3,294 +3,299 @@
 }   */
 
 
-.Header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 999;
+ .Header {
+     position: fixed;
+     top: 0;
+     left: 0;
+     right: 0;
+     z-index: 999;
 
-    background: rgba(0,0,0,0.2);
-}
+     background: rgba(0, 0, 0, 0.2);
+ }
 
-.Header h1 {
-    font-size: 0;
-}
+ .Header h1 {
+     font-size: 0;
+ }
 
-.Header .Header_Wrap {
-    display: flex;
-    padding: 0 80px;
-}
+ .Header .Header_Wrap {
+     display: flex;
+     padding: 0 80px;
+ }
 
-.Header .Header_Wrap .Gnb {
-    margin: 30px 0 0 auto;
-    color: #f9f9f9;
-}
+ .Header .Header_Wrap .Gnb {
+     margin: 30px 0 0 auto;
+     color: #f9f9f9;
+ }
 
-.Header .Header_Wrap .Gnb ul {
-    display: flex;
-    gap: 16px;
-} 
+ .Header .Header_Wrap .Gnb ul {
+     display: flex;
+     gap: 16px;
+ }
 
-.Header .Header_Wrap .Gnb .US {
-    border: 1px solid #d32140;
-    color: #d32140;
-    padding: 4px;
-}
+ .Header .Header_Wrap .Gnb .US {
+     border: 1px solid #d32140;
+     color: #d32140;
+     padding: 4px;
+ }
 
-.Header .Header_Wrap .Gnb .kor {
-    font-weight: 900;
+ .Header .Header_Wrap .Gnb .kor {
+     font-weight: 900;
 
-}
+ }
 
-.Header .Header_Wrap .Gnb i {
-    font-size: 20px;
-}
+ .Header .Header_Wrap .Gnb i {
+     font-size: 20px;
+ }
 
-.Header .Header_Wrap .Gnb .bar {
-    color: #d32140;
-}
+ .Header .Header_Wrap .Gnb .bar {
+     color: #d32140;
+ }
 
-.MainVisual {
- position: relative;
-}
+ .MainVisual {
+     position: relative;
+     width: 100%;
+ }
 
-.MainVisual .scroll {
-    position: absolute;
-    bottom: 200px;
-    left: 50%;
-    transform: translate(-50%, 0);
+ .VisualMovie {
+     overflow: hidden;
+ }
 
-    font-size: 0;
-    width: 32px;
-    height: 48px;
-    border: 2px solid #d32140;
-    border-radius: 16px;
-}
+ .MainVisual .scroll {
+     position: absolute;
+     bottom: 200px;
+     left: 50%;
+     transform: translate(-50%, 0);
 
-.MainVisual .scroll:after {
-    content: "";
-    position: absolute;
-    top: 10px;
-    left: 50%;
-    transform: translate(-50%, 0);
+     font-size: 0;
+     width: 32px;
+     height: 48px;
+     border: 2px solid #d32140;
+     border-radius: 16px;
+ }
 
-    width: 4px;
-    height: 10px;
-    background: #d32140;
-    border-radius: 2px;
+ .MainVisual .scroll:after {
+     content: "";
+     position: absolute;
+     top: 10px;
+     left: 50%;
+     transform: translate(-50%, 0);
 
-    animation: wheel 0.5s infinite;
-}
+     width: 4px;
+     height: 10px;
+     background: #d32140;
+     border-radius: 2px;
 
-@keyframes wheel {
-    0% {
-        transform: translate(-50%, 0);
-    }
+     animation: wheel 0.5s infinite;
+ }
 
-    100% {
-        transform: translate(-50%, 25%);
-    }
-}
+ @keyframes wheel {
+     0% {
+         transform: translate(-50%, 0);
+     }
 
-.Services .Svc {
-    display: flex;
-    max-width: 1200px;
-    margin: 0 auto 24px auto;
-    text-align: center;
-    line-height: 24px;
-    
-}
+     100% {
+         transform: translate(-50%, 25%);
+     }
+ }
 
+ .Services .Svc {
+     display: flex;
+     max-width: 1200px;
+     margin: 0 auto 24px auto;
+     text-align: center;
+     line-height: 24px;
 
-.Services .Svc .SC i {
-    font-size: 80px;
-    color: #d32140;
-    padding: 0 0 28px 0;
-    border-bottom: 1px solid #E2E2E2;
-    margin: 0 0 12px 0;
-}
-
-.Services .Svc .SC strong {
-    text-align: center;
-    font-size: 20px;
-    font-weight: 700;
-    
-}
-
-.Services .Svc .SC {
-    flex: 1;
-    overflow: hidden;
-    padding: 0 0 24px 0;
-}
-
-.Services .Svc .SC:hover {
-    transition: 0.2s;
-    color: #fff;
-    background: #d32140;
-    overflow: hidden;
-    cursor: pointer;
-}
-
-.Services .Svc .SC:hover i {
-    color: #fff;
-}
-
-.CampAigns .inner .AignsContent {
-    display: flex;
-    gap: 20px;
-    margin: 0 0 24px 0;
-    flex-wrap: wrap;
-}
-
-.CampAigns .inner .AignsContent>* {
-    flex: 1 0 250px;
-    border: 1px solid #E2E2E2;
-    overflow: hidden;
-    height: 300px;
-}
-
-.CampAigns .inner .AignsContent .FG p {
-    padding: 0 12px 12px 12px;
-    text-align: left;
-    font-size: 16px;
-    color: #909090;
-}
-
-.CampAigns .inner .AignsContent .FG span {
-    padding: 0 12px;
-    text-align: left;
-    font-size: 12px;
-    color: #909090;
-
-}
-
-.CampAigns .inner .AignsContent{
-    display: flex;
-    gap: 20px;
-}
-
-.CampAigns .FG {
-    position: relative;
-    cursor: pointer;
-}
-
-.CampAigns .FG .desc{
-    padding: 12px;
-    border-bottom: 1px solid #ddd;
-    height: 100px;
-}
-
-.CampAigns .FG:hover .desc {
-    background: #d32140;
-}
-
-.CampAigns .FG:hover .desc span {
-    color: #fff;
-}
-
-.CampAigns .FG:hover .desc p {
-    color: #fff;
-}
+ }
 
 
-.CampAigns .FG figure {
-    position: absolute;
-    top:0;
-    left:0;
-    right:0;
+ .Services .Svc .SC i {
+     font-size: 80px;
+     color: #d32140;
+     padding: 0 0 28px 0;
+     border-bottom: 1px solid #E2E2E2;
+     margin: 0 0 12px 0;
+ }
 
-    transition: 0.5s;
-}
+ .Services .Svc .SC strong {
+     text-align: center;
+     font-size: 20px;
+     font-weight: 700;
 
-.CampAigns .FG:hover figure {
-    top:-70px;
-}
+ }
 
-.CampAigns .FG .util {
-    line-height: 70px;
-    background: #ac1831;
-    font-size: 28px;
-    color: #fff;
-}
+ .Services .Svc .SC {
+     flex: 1;
+     overflow: hidden;
+     padding: 0 0 24px 0;
+ }
 
-.CampAigns .FG:hover .desc{
-    transform: translate(0, 0);
-}
+ .Services .Svc .SC:hover {
+     transition: 0.2s;
+     color: #fff;
+     background: #d32140;
+     overflow: hidden;
+     cursor: pointer;
+ }
+
+ .Services .Svc .SC:hover i {
+     color: #fff;
+ }
+
+ .CampAigns .inner .AignsContent {
+     display: flex;
+     gap: 20px;
+     margin: 0 0 24px 0;
+     flex-wrap: wrap;
+ }
+
+ .CampAigns .inner .AignsContent>* {
+     flex: 1 0 250px;
+     border: 1px solid #E2E2E2;
+     overflow: hidden;
+     height: 300px;
+ }
+
+ .CampAigns .inner .AignsContent .FG p {
+     padding: 0 12px 12px 12px;
+     text-align: left;
+     font-size: 16px;
+     color: #909090;
+ }
+
+ .CampAigns .inner .AignsContent .FG span {
+     padding: 0 12px;
+     text-align: left;
+     font-size: 12px;
+     color: #909090;
+
+ }
+
+ .CampAigns .inner .AignsContent {
+     display: flex;
+     gap: 20px;
+ }
+
+ .CampAigns .FG {
+     position: relative;
+     cursor: pointer;
+ }
+
+ .CampAigns .FG .desc {
+     padding: 12px;
+     border-bottom: 1px solid #ddd;
+     height: 100px;
+ }
+
+ .CampAigns .FG:hover .desc {
+     background: #d32140;
+ }
+
+ .CampAigns .FG:hover .desc span {
+     color: #fff;
+ }
+
+ .CampAigns .FG:hover .desc p {
+     color: #fff;
+ }
 
 
-.CampAigns .more {
-    text-align: center;
-    line-height: 40px;
-}
+ .CampAigns .FG figure {
+     position: absolute;
+     top: 0;
+     left: 0;
+     right: 0;
 
-.CampAigns .more i {
-    font-size: 28px;
-    font-weight: 100;
-    color: #d32140;
-}
+     transition: 0.5s;
+ }
+
+ .CampAigns .FG:hover figure {
+     top: -70px;
+ }
+
+ .CampAigns .FG .util {
+     line-height: 70px;
+     background: #ac1831;
+     font-size: 28px;
+     color: #fff;
+ }
+
+ .CampAigns .FG:hover .desc {
+     transform: translate(0, 0);
+ }
 
 
-.Vision {
-    background: #000;
-    text-align: center;
-    color: #d6d5d5;
-    font-size: 24px;
-    line-height: 30px;
-}
+ .CampAigns .more {
+     text-align: center;
+     line-height: 40px;
+ }
 
-.Vision span {
-    color: #d32140;
-    position: relative;
-    padding: 0 0 80px 0;
-}
+ .CampAigns .more i {
+     font-size: 28px;
+     font-weight: 100;
+     color: #d32140;
+ }
 
-.Vision span::after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 2px;
-    height: 24px;
-    background: #d32140;
-}
 
-.Vision .inner .img_box {
-    padding: 80px 0;
-} 
+ .Vision {
+     background: #000;
+     text-align: center;
+     color: #d6d5d5;
+     font-size: 24px;
+     line-height: 30px;
+ }
 
-.Footer {
-    background: #202020;
-}
+ .Vision span {
+     color: #d32140;
+     position: relative;
+     padding: 0 0 80px 0;
+ }
 
-.Footer .ftmid .link {
-    display: flex;
-    gap: 30px;
-    color: #b3b2b2;
-    margin: 0 0 24px 0;
-}
+ .Vision span::after {
+     content: "";
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     width: 2px;
+     height: 24px;
+     background: #d32140;
+ }
 
-.Footer .ftmid .link li {
-    position: relative;
-}
+ .Vision .inner .img_box {
+     padding: 80px 0;
+ }
 
-.Footer .ftmid .link li~li::before {
-    content: "";
-    position: absolute;
-    top: 60%;
-    left: -15px;
-    transform: translate(0, -50%);
-    width: 1px;
-    height: 12px;
-    background: #909090;
-}
+ .Footer {
+     background: #202020;
+ }
 
-.Footer .ftmid .link .pass {
-    color: #fff;
-    font-weight: 900;
-}
+ .Footer .ftmid .link {
+     display: flex;
+     gap: 30px;
+     color: #b3b2b2;
+     margin: 0 0 24px 0;
+ }
 
-.Footer .copy {
-    color: #b3b2b2;
-}
+ .Footer .ftmid .link li {
+     position: relative;
+ }
+
+ .Footer .ftmid .link li~li::before {
+     content: "";
+     position: absolute;
+     top: 60%;
+     left: -15px;
+     transform: translate(0, -50%);
+     width: 1px;
+     height: 12px;
+     background: #909090;
+ }
+
+ .Footer .ftmid .link .pass {
+     color: #fff;
+     font-weight: 900;
+ }
+
+ .Footer .copy {
+     color: #b3b2b2;
+ }
